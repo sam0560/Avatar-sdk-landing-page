@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: #fff;
+  font-weight: 500;
+  /* overflow-x: hidden; */
+}
+
+body{
+  background-color: #101E74;
+}
+
+img{
+  max-width: 100%;
+}
+
+#background {
+  background-color: #ffffff33;
+}
+
+#text{
+  color: #ffffff80;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 100%;
+}

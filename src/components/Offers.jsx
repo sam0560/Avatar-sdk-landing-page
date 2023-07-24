@@ -10,7 +10,7 @@ const Offers = () => {
                     <h2>Personalization</h2>
                     <p id="text" className='max-w-[25rem] w-full mt-4'>Users can customize avatars and be different from who they are in the real world</p>
                 </div>
-                <img src={LadyImage} alt="image of an anvatar lady" className='flex-1 max-w-[25rem] w-full'/>
+                <img src={LadyImage} alt="image of an anvatar lady" className='flex-1 max-w-[25rem] w-full z-10'/>
             </div>
 
             

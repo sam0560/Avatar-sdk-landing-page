@@ -5,11 +5,8 @@
 #root{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   color: #fff;
-  font-weight: 400;
-  /* overflow-x: hidden; */
+  font-weight: 500;
 }
 
 body{
@@ -26,6 +23,7 @@ img{
 
 #text{
   color: #ffffff80;
+  font-weight: 500;
 }
 
 h1,

@@ -15,9 +15,10 @@ const Header = () => {
             px-10
             max-md:px-4
             overflow-hidden
+            mx-auto
             ">
                 <img src={MainLogo} alt="Main page logo" className="max-w-full"/>
-                <div className="">
+                <div>
                     <ul className="
                         flex
                         gap-8
@@ -25,7 +26,7 @@ const Header = () => {
                         items-center
                         justify-center
                         max-lg:text-xl
-                        max-lg:fixed
+                        max-lg:hidden
                         max-lg:top-0
                         max-lg:left-[20%]
                         max-lg:right-0
@@ -37,7 +38,6 @@ const Header = () => {
                     ">
                         <li className="capitalize">
                             <a href="#">
-                                {/* products <span><KeyboardArrowDownIcon/></span> */}
                                 products
                             </a>
                         </li>
@@ -78,17 +78,22 @@ const Header = () => {
                     items-center
                     gap-4
                     ">
-                        <li className="capitalize">
-                            <a href="#">sign in</a>
-                        </li>
-                        <li>
-                            <button className="capitalize py-2 w-20 rounded-full" id="background">sign up</button>
-                        </li>
-                        <li>
-                            <button className="capitalize border border-[ffffff33] py-2 w-20 rounded-full">en</button>
-                        </li>
-                    </ul>
+                    <li className="capitalize max-lg:hidden">
+                        <a href="#">sign in</a>
+                    </li>
+                    <li>
+                        <button className="capitalize py-2 w-24 rounded-full max-lg:hidden" id="background">sign up</button>
+                    </li>
+                    <li>
+                        <button className="capitalize border border-[#ffffff33] py-2 w-24 rounded-full">en <span id="text"> 漢語</span></button>
+                    </li>
+                </ul>
                 </div>
+
+
+                {/* mobile */}
+
+                <div className="w-8 aspect-square bg-blue-700 hidden max-lg:block z-10"></div>
             </div>
         </div>
     )

@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import Platforms from './components/Platforms'
 import PersonCreator from './components/PersonCreator'
 import Offers from './components/Offers'
+import CallToAction from './components/CallToAction'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       <Platforms />
       <PersonCreator />
       <Offers />
+      <CallToAction />
+      <Footer />
     </>
   )
 }

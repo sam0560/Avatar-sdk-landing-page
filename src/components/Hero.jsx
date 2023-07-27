@@ -11,7 +11,7 @@ const Hero = () => {
     return(
         <div className='flex flex-col justify-center items-center mx-auto max-w-[66rem] max-md:px-8'>
             <div>
-                <h1 className="max-w-[32rem] w-full text-center mx-auto mt-8">
+                <h1 className="max-w-[32rem] w-full text-center mx-auto mt-8 font-semibold tracking-wider">
                     Recognizable MetaPerson avatars built from selfies
                 </h1>
                 <p className='my-8 max-w-[36rem] w-full max-sm:text-center' id='text'>Elevate your product to new heights by seamlessly integrating lifelike avatars. With MetaPerson, you can offer your users an immersive and personalized experience like never before

@@ -43,7 +43,7 @@ const Platforms = () => {
             </div>
 
             <div className='max-md:text-center flex-1'>
-                <h2 className='md:max-w-[20rem] max-sm:mt-8'>Easy integration to your apps</h2>
+                <h2 className='md:max-w-[20rem] max-sm:mt-8 font-semibold tracking-wider'>Easy integration to your apps</h2>
                 <p className='mt-2 
                 mb-12 
                 max-w-[23rem] 

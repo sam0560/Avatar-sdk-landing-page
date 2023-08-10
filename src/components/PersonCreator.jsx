@@ -7,8 +7,10 @@ import CheckIcon from '../assets/images/PersonCreator/correct-check-icon.png';
 const PersonCreator = () => {
     return(
         <div className="max-w-[66rem] w-full mx-auto ">
-            <h2 className='text-center md:max-w-[38rem] mx-auto max-md:px-8 max-sm:text-center font-semibold tracking-wider'>Integrate MetaPerson Creator to any place</h2>
-                <p className='mt-3 
+            <h2 className='text-center md:max-w-[38rem] mx-auto max-md:px-8 max-sm:text-center font-semibold tracking-wider text-2xl md:text-3xl'>
+                Integrate MetaPerson Creator to any place
+                </h2>
+            <p className='mt-3 
                 mb-12 
                 max-w-[38rem]
                 leading-tight

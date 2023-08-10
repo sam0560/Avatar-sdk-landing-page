@@ -25,25 +25,25 @@ const Platforms = () => {
                 <ul className='grid md:grid-cols-2 md:grid-rows-2 gap-8'>
                     <li className=' bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-8'>
                         <img src={Web} alt="Closing tag for logo" className='md:mb-8 max:sm:flex-1'/>
-                        <p className='max:sm:flex-1'>Web</p>
+                        <p className='max:sm:flex-1 text-xl'>Web</p>
                     </li> 
                     <li className='bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-16'>
                         <img src={Ios} alt="apple logo" className='md:mb-8 max:sm:flex-1'/>
-                        <p className='max:sm:flex-1'>IOS</p>
+                        <p className='max:sm:flex-1 text-xl'>IOS</p>
                     </li> 
                     <li className='bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-14'>
                         <img src={Unity} alt="unity logo" className='md:mb-8'/>
-                        <p>Unity</p>
+                        <p className='text-xl'>Unity</p>
                     </li> 
                     <li className='bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-14'>
                         <img src={Unreal} alt="unreal logo" className='md:mb-8'/>
-                        <p>Unreal Engine</p>
+                        <p className='text-xl'>Unreal Engine</p>
                     </li> 
                 </ul>
             </div>
 
             <div className='max-md:text-center flex-1'>
-                <h2 className='md:max-w-[20rem] max-sm:mt-8 font-semibold tracking-wider'>Easy integration to your apps</h2>
+                <h2 className='md:max-w-[20rem] max-sm:mt-8 font-semibold tracking-wider text-2xl md:text-3xl'>Easy integration to your apps</h2>
                 <p className='mt-2 
                 mb-12 
                 max-w-[23rem] 

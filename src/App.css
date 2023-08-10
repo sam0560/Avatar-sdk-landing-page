@@ -32,5 +32,10 @@ h3,
 h4,
 h5,
 h6 {
-  max-width: 100%;
+  width: 100%;
+}
+
+button:hover{
+  transition: 0.5s;
+  transform: translateY(-5px);
 }

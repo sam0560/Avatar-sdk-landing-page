@@ -6,7 +6,7 @@ const CallToAction = () => {
             <div className='max-w-[66rem] w-full mx-auto bg-gradient-to-br from-[#F5841B] to-[#FF4B38] md:rounded-xl sm:rounded-none md:mt-[45rem] max-md:pt-8'>
                 <div className="flex max-sm:flex-col max-sm:px-8 md:px-8 gap-y-4 max-sm:text-center items-center justify-between">
                     <div className='flex-1'>
-                        <h2 className='font-semibold tracking-wider'>
+                        <h2 className='font-semibold tracking-wider text-2xl md:text-3xl'>
                             Integrate MetaPerson avatars
                         </h2>
                         <p id="text" className='max-w-[25rem] w-full mt-4'>

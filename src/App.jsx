@@ -7,10 +7,26 @@ import Offers from './components/Offers'
 import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
 
-function App() {
+import { motion, useScroll} from 'framer-motion'
 
+function App() {
+  const {scrollYProgress} = useScroll();
+  
   return (
     <>
+      <motion.div 
+      style={{ scaleX: scrollYProgress }}
+      className='
+       fixed
+       top-0
+       left-0
+       right-0
+       h-[2px]
+       bg-[#F5841B]
+       z-20
+       origin-left
+      '
+      />
       <Header />
       <Hero />
       <Platforms />

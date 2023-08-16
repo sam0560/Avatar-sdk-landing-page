@@ -26,17 +26,27 @@ const Hero = () => {
                 "
                 initial={{opacity: 0, x: -100}}
                 whileInView={{opacity:1, x:0}}
-                transition={{duration: 1}}
+                transition={{duration: 0.5}}
                 >
                     Recognizable MetaPerson avatars built from selfies
                 </motion.h1>
-                <p className='my-8 max-w-[36rem] w-full max-sm:text-center' id='text'>Elevate your product to new heights by seamlessly integrating lifelike avatars. With MetaPerson, you can offer your users an immersive and personalized experience like never before
-                </p>
+                <motion.p className='
+                my-8 
+                max-w-[36rem] 
+                w-full 
+                max-sm:text-center' 
+                id='text'
+                initial={{opacity: 0, x: -100}}
+                whileInView={{opacity:1, x:0}}
+                transition={{duration: 0.5, delay: 0.5}}
+                >
+                    Elevate your product to new heights by seamlessly integrating lifelike avatars. With MetaPerson, you can offer your users an immersive and personalized experience like never before
+                </motion.p>
             </div>
             <img src={HeroImage} alt="hero image"/>
 
             <div className='md:inline-flex items-center gap-8 mt-8 sm:block'>
-                <button className='
+                <motion.button className='
                 rounded-xl
                 bg-gradient-to-br 
                 from-[#F5841B] 
@@ -44,12 +54,36 @@ const Hero = () => {
                 py-3
                 px-5
                 max-sm:w-full
-                '>Create an avatar</button>
+                '
+                whileTap={{
+                    scale: 0.9
+                }}
+                whileHover={{
+                    y: -3,
+                    transition: {duration: 0.3}
+                }}
+                >Create an avatar</motion.button>
                 
-                <a href="#" className='inline-flex gap-2 max-sm:w-full max-sm:bg-[#ffffff33] max-sm:rounded-xl max-sm:py-3 max-sm:mt-4 max-sm:justify-center'>
+                <motion.a href="#" className='
+                inline-flex 
+                gap-2 
+                max-sm:w-full 
+                max-sm:bg-[#ffffff33] 
+                max-sm:rounded-xl 
+                max-sm:py-3 
+                max-sm:mt-4 
+                max-sm:justify-center'
+                whileTap={{
+                    scale: 0.9
+                }}
+                whileHover={{
+                    y: -3,
+                    transition: {duration: 0.3}
+                }}
+                >
                     <img src={DevSign} alt="sign up by developer" />
                     <span>Developer sign-up</span>
-                </a>
+                </motion.a>
             </div>
 
             <div>

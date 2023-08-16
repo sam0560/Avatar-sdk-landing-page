@@ -3,6 +3,7 @@ import Ios from '../assets/images/platforms/ios.png'
 import Unity from '../assets/images/platforms/unity.png'
 import Unreal from '../assets/images/platforms/unreal.png'
 import ReadDocs from '../assets/images/platforms/read-docs.svg'
+import { motion } from 'framer-motion'
 
 const Platforms = () => {
     return(
@@ -57,7 +58,7 @@ const Platforms = () => {
                 </p>
 
                 <div className='md:inline-flex items-center gap-8 max-sm:block'>
-                    <button className='
+                    <motion.button className='
                     rounded-xl
                     bg-gradient-to-br
                     from-[#F5841B]
@@ -65,12 +66,39 @@ const Platforms = () => {
                     py-3
                     px-5
                     max-sm:w-full
-                    '>Sign up as Developer</button>
+                    '
+                    whileTap={{
+                        scale: 0.9
+                    }}
+                    whileHover={{
+                        y: -3,
+                        transition: {duration: 0.3}
+                    }}
+                    >Sign up as Developer</motion.button>
                     
-                    <a href="#" className='inline-flex gap-2 max-sm:w-full max-sm:bg-[#ffffff33] max-sm:rounded-xl max-sm:py-3 max-sm:justify-center max-sm:mt-4'>
+                    <motion.a href="#" className='
+                    inline-flex 
+                    gap-2 
+                    max-sm:w-full 
+                    max-sm:bg-[#ffffff33] 
+                    max-sm:rounded-xl 
+                    max-sm:py-3 
+                    max-sm:justify-center 
+                    max-sm:mt-4'
+                    whileTap={{
+                        scale: 0.9
+                    }}
+                    whileHover={{
+                        y: -3,
+                        transition: {duration: 0.3}
+                    }}
+                    whileFocus={{
+                        scale: 3
+                    }}
+                    >
                         <img src={ReadDocs} alt="read documentation" />
                         <span>Read the Docs</span>
-                    </a>
+                    </motion.a>
                 </div>
             </div>
         </div>

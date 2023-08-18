@@ -4,13 +4,56 @@ import PhoneIcon from '../assets/images/PersonCreator/take-selfie-icon.png';
 import SettingIcon from '../assets/images/PersonCreator/setting-icon.png';
 import CheckIcon from '../assets/images/PersonCreator/correct-check-icon.png';
 
+// Motion
+import { motion } from 'framer-motion'
+
 const PersonCreator = () => {
+    // Variant for text value
+    const divVariant = {
+        hidden: {
+            opacity: 0, 
+            y: 50
+        },
+        show: {
+            opacity:1, 
+            y:0,
+            transition: {
+                duration: 0.5
+            },
+        }
+    }
+
+    const paragraphChildren = {
+        hidden: {
+            opacity: 0,
+            y: 50
+        },
+        show: {
+            opacity: 1,
+            y:0,
+            transition:{duration: 0.5, delay: 0.5},
+        }
+    }
     return(
         <div className="max-w-[66rem] w-full mx-auto ">
-            <h2 className='text-center md:max-w-[38rem] mx-auto max-md:px-8 max-sm:text-center font-semibold tracking-wider text-2xl md:text-3xl'>
+            <motion.h2 className='
+            text-center 
+            md:max-w-[38rem] 
+            mx-auto 
+            max-md:px-8 
+            max-sm:text-center 
+            font-semibold 
+            tracking-wider 
+            text-2xl 
+            md:text-3xl'
+
+            variants={divVariant}
+            initial="hidden"
+            whileInView="show"
+            >
                 Integrate MetaPerson Creator to any place
-                </h2>
-            <p className='mt-3 
+            </motion.h2>
+            <motion.p className='mt-3 
                 mb-12 
                 max-w-[38rem]
                 leading-tight
@@ -19,10 +62,15 @@ const PersonCreator = () => {
                 md:mx-auto
                 max-md:px-8
                 '
-                id='text'>
+                id='text'
+                
+                variants={paragraphChildren}
+                initial="hidden"
+                whileInView="show"
+                >
                     Stand out from the competition and create a product that 
                     truly captivates your audience with lifelike MetaPerson avatars
-                </p>
+                </motion.p>
 
 
                 {/* Avatar creator */}

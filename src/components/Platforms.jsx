@@ -6,6 +6,62 @@ import ReadDocs from '../assets/images/platforms/read-docs.svg'
 import { motion } from 'framer-motion'
 
 const Platforms = () => {
+
+    // Variant for Listed patform
+    const variantContainer = {
+        hidden : {
+            opacity: 0
+        },
+        show : {
+            opacity: 1,
+            transition:{
+                staggerChildren: 0.5,
+                duration: 2
+            }
+        }
+    }
+
+    const list = {
+        hidden : {
+            y: 50,
+            opacity: 0
+        },
+        show : {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.5
+            }
+        }
+    }
+
+    // Variant for text value
+    const divVariant = {
+        hidden: {
+            opacity: 0, 
+            y: 50
+        },
+        show: {
+            opacity:1, 
+            y:0,
+            transition: {
+                duration: 0.5
+            },
+        }
+    }
+
+    const paragraphChildren = {
+        hidden: {
+            opacity: 0,
+            y: 50
+        },
+        show: {
+            opacity: 1,
+            y:0,
+            transition:{duration: 0.5, delay: 0.5},
+        }
+    }
+
     return(
             <div className='
             md:flex 
@@ -23,39 +79,77 @@ const Platforms = () => {
             px-8
             '>
             <div className='flex-1'>
-                <ul className='grid md:grid-cols-2 md:grid-rows-2 gap-8'>
-                    <li className=' bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-8'>
+                <motion.ul className='
+                grid 
+                md:grid-cols-2 
+                md:grid-rows-2 
+                gap-8' 
+                variants={variantContainer}
+                initial="hidden"
+                whileInView="show"
+                >
+                    <motion.li className=' 
+                    platform-list 
+                    max-sm:gap-8'
+                    variants={list}
+                    >
                         <img src={Web} alt="Closing tag for logo" className='md:mb-8 max:sm:flex-1'/>
                         <p className='max:sm:flex-1 text-xl'>Web</p>
-                    </li> 
-                    <li className='bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-16'>
+                    </motion.li> 
+                    <motion.li className='
+                    platform-list 
+                    max-sm:gap-16'
+                    variants={list}
+                    >
                         <img src={Ios} alt="apple logo" className='md:mb-8 max:sm:flex-1'/>
                         <p className='max:sm:flex-1 text-xl'>IOS</p>
-                    </li> 
-                    <li className='bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-14'>
+                    </motion.li> 
+                    <motion.li className='
+                    platform-list 
+                    max-sm:gap-14'
+                    variants={list}
+                    >
                         <img src={Unity} alt="unity logo" className='md:mb-8'/>
                         <p className='text-xl'>Unity</p>
-                    </li> 
-                    <li className='bg-[#ffffff33] pl-4 pr-20 py-6 rounded-2xl max-sm:flex max-sm:flex-row max-sm:items-center max-sm:gap-14'>
+                    </motion.li> 
+                    <motion.li className='
+                    platform-list 
+                    max-sm:gap-14'
+                    variants={list}
+                    >
                         <img src={Unreal} alt="unreal logo" className='md:mb-8'/>
                         <p className='text-xl'>Unreal Engine</p>
-                    </li> 
-                </ul>
+                    </motion.li> 
+                </motion.ul>
             </div>
 
             <div className='max-md:text-center flex-1'>
-                <h2 className='md:max-w-[20rem] max-sm:mt-8 font-semibold tracking-wider text-2xl md:text-3xl'>Easy integration to your apps</h2>
-                <p className='mt-2 
+                <motion.h2 className='
+                md:max-w-[20rem] 
+                max-sm:mt-8 
+                font-semibold 
+                tracking-wider 
+                text-2xl 
+                md:text-3xl'
+
+                variants={divVariant}
+                initial="hidden"
+                whileInView="show"
+                >Easy integration to your apps</motion.h2>
+                <motion.p className='mt-2 
                 mb-12 
                 max-w-[23rem] 
                 w-full
                 leading-tight 
                 max-md:mx-auto
-                
                 ' 
+
+                variants={paragraphChildren}
+                initial="hidden"
+                whileInView="show"
                 id='text'>
                     We provide ready sample projects for popular target platforms
-                </p>
+                </motion.p>
 
                 <div className='md:inline-flex items-center gap-8 max-sm:block'>
                     <motion.button className='

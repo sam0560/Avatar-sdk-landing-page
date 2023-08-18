@@ -21,7 +21,7 @@ function App() {
        top-0
        left-0
        right-0
-       h-[2px]
+       h-[4px]
        bg-[#F5841B]
        z-20
        origin-left

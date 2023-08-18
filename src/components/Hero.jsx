@@ -10,8 +10,40 @@ import MicrosoftLogo from '../assets/images/sponsorsLogo/Microsoft_logo.png'
 import { motion } from 'framer-motion'
 
 const Hero = () => {
+    const divVariant = {
+        hidden: {
+            opacity: 0, 
+            x: -100
+        },
+        show: {
+            opacity:1, 
+            x:0,
+            transition: {
+                duration: 0.5
+            }
+        }
+    }
+
+    const paragraphChildren = {
+        hidden: {
+            opacity: 0,
+            x: -100
+        },
+        show: {
+            opacity: 1,
+            x:0,
+            transition:{duration: 0.5, delay: 0.5}
+        }
+    }
     return(
-        <div className='flex flex-col justify-center items-center mx-auto max-w-[66rem] max-md:px-8'>
+        <div className='
+        flex 
+        flex-col 
+        justify-center 
+        items-center 
+        mx-auto 
+        max-w-[66rem] 
+        max-md:px-8'>
             <div>
                 <motion.h1 className="
                 max-w-[32rem] 
@@ -24,9 +56,10 @@ const Hero = () => {
                 text-2xl 
                 md:text-4xl
                 "
-                initial={{opacity: 0, x: -100}}
-                whileInView={{opacity:1, x:0}}
-                transition={{duration: 0.5}}
+
+                variants={divVariant}
+                initial="hidden"
+                whileInView="show"
                 >
                     Recognizable MetaPerson avatars built from selfies
                 </motion.h1>
@@ -36,9 +69,10 @@ const Hero = () => {
                 w-full 
                 max-sm:text-center' 
                 id='text'
-                initial={{opacity: 0, x: -100}}
-                whileInView={{opacity:1, x:0}}
-                transition={{duration: 0.5, delay: 0.5}}
+
+                variants={paragraphChildren}
+                initial="hidden"
+                whileInView="show"
                 >
                     Elevate your product to new heights by seamlessly integrating lifelike avatars. With MetaPerson, you can offer your users an immersive and personalized experience like never before
                 </motion.p>

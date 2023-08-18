@@ -7,3 +7,14 @@
     font-family: HelveticaNeueCyr, system-ui, sans-serif;
   }
 }
+.platform-list{
+  @apply
+  bg-[#ffffff33] 
+    pl-4 
+    pr-20 
+    py-6 
+    rounded-2xl 
+    max-sm:flex 
+    max-sm:flex-row 
+    max-sm:items-center
+}

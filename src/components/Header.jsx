@@ -1,6 +1,6 @@
 import MainLogo from "../assets/images/main-logo.png"
 import DiscordLogo from "../assets/images/discord-logo.png"
-// import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import BurgerMenu from "../assets/images/burgerMenu.svg"
 
 const Header = () => {
     return(
@@ -93,7 +93,9 @@ const Header = () => {
 
                 {/* mobile */}
 
-                <div className="w-8 aspect-square bg-blue-700 hidden max-lg:block z-10"></div>
+                <div className="w-8 aspect-square max-lg:block z-10">
+                    <img src={BurgerMenu} alt="smaller screen burger menu" />
+                </div>
             </div>
         </div>
     )

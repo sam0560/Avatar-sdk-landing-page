@@ -37,7 +37,8 @@ const Offers = () => {
             opacity: 0,
         },
         show: {
-            opacity:1, 
+            opacity:1,
+            scale: [0.5, 1],
             transition: {
                 duration: 1,
             },

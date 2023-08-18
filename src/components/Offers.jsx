@@ -32,16 +32,14 @@ const Offers = () => {
             },
         }
     }
-    const imageRight = {
+    const easeVariant = {
         hidden: {
-            opacity: 0, 
-            x: 100
+            opacity: 0,
         },
         show: {
             opacity:1, 
-            x:0,
             transition: {
-                duration: 1
+                duration: 1,
             },
         }
     }
@@ -64,7 +62,7 @@ const Offers = () => {
                     w-full 
                     z-10'
 
-                    variants={imageRight}
+                    variants={easeVariant}
                     initial="hidden"
                     whileInView="show"
                 />
@@ -112,7 +110,7 @@ const Offers = () => {
                     max-w-[25rem] 
                     w-full'
 
-                    variants={imageRight}
+                    variants={easeVariant}
                     initial="hidden"
                     whileInView="show"
                 />

@@ -93,7 +93,7 @@ const Header = () => {
 
                 {/* mobile */}
 
-                <div className="w-8 aspect-square max-lg:block z-10">
+                <div className="w-8 aspect-square block lg:hidden z-10">
                     <img src={BurgerMenu} alt="smaller screen burger menu" />
                 </div>
             </div>

@@ -82,7 +82,7 @@ const Header = () => {
                         <a href="#">sign in</a>
                     </li>
                     <li>
-                        <button className="capitalize py-2 w-24 rounded-full max-lg:hidden" id="background">sign up</button>
+                        <button className="capitalize py-2 w-24 rounded-full max-lg:hidden bg-[#ffffff33]">sign up</button>
                     </li>
                     <li>
                         <button className="capitalize border border-[#ffffff33] py-2 w-24 rounded-full">en <span id="text"> 漢語</span></button>

@@ -21,8 +21,8 @@ const CallToAction = () => {
                             py-3
                             px-5
                             max-sm:w-full
+                            bg-[#ffffff33]
                             '
-                            id='background'
                             >Create an avatar</button>
                             
                             <a href="#" className='inline-flex gap-2 max-sm:w-full max-sm:rounded-xl max-sm:py-3 max-sm:mt-4 max-sm:justify-center'>

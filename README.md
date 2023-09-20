@@ -1,6 +1,6 @@
 https://avatarsdk-clone.netlify.app/
 # Avatar Sdk
-This is a landing page for Avatar Sdk company where registered members can take a snap of himself/herself and the AI auto-generates an avatar resembling the human.
+This is a landing page for Avatar Sdk company where users upload image and the AI auto-generates an avatar of the image.
 
 ## Getting Started
 - Clone repository into a special location on your computer/laptop

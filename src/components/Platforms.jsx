@@ -94,7 +94,7 @@ const Platforms = () => {
                     variants={list}
                     >
                         <img src={Web} alt="Closing tag for logo" className='md:mb-8 max:sm:flex-1'/>
-                        <p className='max:sm:flex-1 text-xl'>Web</p>
+                        <p className='max:sm:flex-1 text-lg'>Web</p>
                     </motion.li> 
                     <motion.li className='
                     platform-list 
@@ -102,7 +102,7 @@ const Platforms = () => {
                     variants={list}
                     >
                         <img src={Ios} alt="apple logo" className='md:mb-8 max:sm:flex-1'/>
-                        <p className='max:sm:flex-1 text-xl'>IOS</p>
+                        <p className='max:sm:flex-1 text-lg'>IOS</p>
                     </motion.li> 
                     <motion.li className='
                     platform-list 
@@ -110,7 +110,7 @@ const Platforms = () => {
                     variants={list}
                     >
                         <img src={Unity} alt="unity logo" className='md:mb-8'/>
-                        <p className='text-xl'>Unity</p>
+                        <p className='text-lg'>Unity</p>
                     </motion.li> 
                     <motion.li className='
                     platform-list 
@@ -118,7 +118,7 @@ const Platforms = () => {
                     variants={list}
                     >
                         <img src={Unreal} alt="unreal logo" className='md:mb-8'/>
-                        <p className='text-xl'>Unreal Engine</p>
+                        <p className='text-lg'>Unreal Engine</p>
                     </motion.li> 
                 </motion.ul>
             </div>

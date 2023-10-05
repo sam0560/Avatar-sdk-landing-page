@@ -1,29 +1,38 @@
 * {
-  padding: 0;
+  @apply
+  p-0
+  m-0
+  box-border
 }
 
 #root{
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  font-weight: 500;
+  @apply
+  flex
+  flex-col
+  text-[#fff]
+  font-medium
 }
 
 body{
-  background-color: #101E74;
+  @apply
+  bg-[#101E74]
+  scroll-smooth
 }
 
 img{
-  max-width: 100%;
+  @apply
+  max-w-full
 }
 
 #background {
-  background-color: #ffffff33;
+  @apply
+  bg-[#ffffff33]
 }
 
 #text{
-  color: #ffffff80;
-  font-weight: 500;
+  @apply
+  text-[#ffffff80]
+  font-medium
 }
 
 h1,
@@ -32,5 +41,6 @@ h3,
 h4,
 h5,
 h6 {
-  width: 100%;
+  @apply
+  max-w-full
 }
